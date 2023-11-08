@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, Button, TextInput, StyleSheet, FlatList, Pressable } from 'react-native';
+import ApiCall from './component/apicall';
 
 export default function App() {
   const [value, setValue] = useState("");
@@ -50,6 +51,10 @@ export default function App() {
             </View>
           )}
         />
+      </View>
+      {/* DATA FETCHING */}
+      <View>
+        <ApiCall/>
       </View>
     </View>
   );
